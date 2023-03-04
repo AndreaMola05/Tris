@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tris DINO VS CACTUS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            min-height: 100vh;
+        }
+        
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        #mainTitle {
+            font-family: 'Press Start 2P';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 64px;
+            line-height: 104px;
+            color: #545454;
+            text-align: center;
+        }
+        
+        .titleContainer {
+            margin-top: 20px;
+        }
+        
+        .playerContainer {
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .player1,
+        .player2 {
+            align-items: center;
+        }
+        
+        h4 {
+            margin-right: 50px;
+            font-family: 'Press Start 2P';
+            font-weight: 900;
+            color: #545454;
+            margin-left: 50px;
+        }
+        
+        .playerContainer {
+            margin-left: 76px;
+        }
+        
+        .flex {
+            display: flex;
+        }
+        
+        h3 {
+            font-family: 'Press Start 2P';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 45px;
+            color: #545454;
+            text-align: center;
+        }
+        
+        .player2 img {
+            margin-left: 15px;
+        }
+        
+        .icon {
+            width: 100px;
+            height: 100px;
+        }
+        
+        a {
+            font-family: 'Press Start 2P';
+            color: #545454;
+            text-align: center;
+            padding-top: 50%;
+            position: relative;
+            top: 50px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        
+        h5 {
+            font-family: 'Press Start 2P';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            color: #545454;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="container flex">
+            <div class="titleContainer">
+                <h1 id="mainTitle">IL TRIS</h1>
+            </div>
+
+            <div class="playerContainer flex">
+                <div class="player1 flex">
+                    <img src="human/static/img/Dino.png" alt="icona del dinosauro" class="icon" />
+                    <h3>DINO= X</h3>
+                </div>
+
+                <h4>VS</h4>
+
+
+                <div class="player2 flex">
+                    <h3>CACTUS= O</h3>
+                    <img src="human/static/img/cactus.png" alt="icona Cactus" class="icon" />
+                </div>
+            </div>
+            <div class="menu">
+                <h5>Scegli la modalità di gioco</h5>
+                <div class="human">
+                    <a href="human/human.html">Modalità contro un umano</a>
+                </div>
+
+                <div>
+                    <div class="computer">
+                        <a href="computer/computer.html">Modalità contro il computer(semplice)</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
